@@ -1,0 +1,28 @@
+{
+    "camera version" : "1.0",
+    "horizontal scale" : 0.2,
+    "vertical scale"   : 0.2,
+    "brightness scale" : 0.2,
+    "affine value"     : 10 ,
+    "motion blur"      : 5  ,
+	"image file location" :    "/home/ducanh/temp/label_by_me",
+    "generated image folder" : "/home/ducanh/ALPR_DUT/generated_data",
+    "test count" : 3000,
+    "y_distance_limited" : 150,
+	"delta_height_limited" :30,
+    "location_LP":
+         {
+             "start_X": 1000,
+             "start_Y": 2000,
+             "width": 2000,
+             "height" : 1000
+         },
+    "box_size_limited":
+         {
+             "smallest" : 30,
+	     "biggest"  : 200
+	 },    
+    "scale_ratio": 0.15,
+    
+    "input_folder":"/home/ducanh/AI_ALPR_LIB/input"    
+}

@@ -1,0 +1,3 @@
+root - INFO - =========================================================
+root - INFO - [0003] Initialized Queues.......
+root - INFO - --> To make clear queue before start main thead, sleep 2 second

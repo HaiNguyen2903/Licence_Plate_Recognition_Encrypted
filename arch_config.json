@@ -1,0 +1,175 @@
+{
+    "img_dir": "lp",
+    "out_dir": "lp_result",
+    "ip_address": "192.168.1.58",
+    "port": 3000,
+    "MAC_address": "dhjkjjbmj0hjeijoe",
+    "archs":
+    {
+        "korean":
+        {
+            "detection":
+            {
+                "onnx_path": "AI_engine/detection.onnx",
+                "trt_path": "AI_engine/detection.trt",
+                "num_classes": 2,
+                "img_shape": 640,
+                "classes": {
+                    "car": 0,
+                    "licence_plate": 1
+                }
+            },
+            "rnn":
+            {
+                "onnx_path": "AI_engine/rnn.onnx",
+                "trt_path": "AI_engine/rnn.engine",
+                "img_shape": [512, 912],
+                "batch_size": 1
+            },
+            "recognition":
+            {
+                "model_path": "AI_engine/recognition.tar",
+                "backbone": "Resnet74"
+            },
+            "keys": "저가나다라마거너더러머버서어고노도로모보소오조구두루무부수우주허하호바사아자배강원경기남북광대전산울세종인천제충누초ABCDEFGHIJKLMNOPQ0123456789-",
+            "aspect_ratio": 2.2,
+            "key_maps": 
+            {       
+                "jeo"           :   "저",
+                "ga"            :   "가",
+                "na"            :   "나",
+                "da"            :   "다", 
+                "ra"            :   "라", 
+                "ma"            :   "마", 
+                "geo"           :   "거", 
+                "neo"           :   "너", 
+                "deo"           :   "더",
+                "reo"           :   "러",
+                "meo"           :   "머",  
+                "beo"           :   "버", 
+                "seo"           :   "서",
+                "eo"            :   "어", 
+                "go"            :   "고",
+                "no"            :   "노",  
+                "do"            :   "도", 
+                "ro"            :   "로", 
+                "mo"            :   "모",
+                "bo"            :   "보",
+                "so"            :   "소", 
+                "o"             :   "오",
+                "jo"            :   "조", 
+                "gu"            :   "구", 
+                "nu"            :   "누", 
+                "du"            :   "두",
+                "ru"            :   "루",  
+                "mu"            :   "무",
+                "bu"            :   "부",  
+                "su"            :   "수",  
+                "u"             :   "우", 
+                "ju"            :   "주",
+                "heo"           :   "허",  
+                "ha"            :   "하",  
+                "ho"            :   "호",
+                "ba"            :   "바",
+                "sa"            :   "사",
+                "a"             :   "아",
+                "ja"            :   "자",
+                "bae"           :   "배",
+                "co"            :   "초",
+                "gangweon"       :   "강원",
+                "gyeonggi"      :   "경기",
+                "gyeongnam"     :   "경남",
+                "gyeongbuk"     :   "경북",
+                "gwangju"       :   "광주",
+                "daegu"         :   "대구",
+                "daejeon"       :   "대전",
+                "busan"         :   "부산",
+                "seoul"         :   "서울",
+                "sejong"        :   "세종",
+                "ulsan"         :   "울산",
+                "inceon"       :   "인천",
+                "jeonnam"       :   "전남",
+                "jeonbuk"       :   "전북",
+                "jeju"          :   "제주",
+                "cungnam"      :   "충남",
+                "cungbuk"      :   "충북",
+                
+                "gangweon_v"     :   "A",
+                "gyeonggi_v"    :   "B",
+                "gyeongnam_v"   :   "C",
+                "gyeongbuk_v"   :   "D",
+                "gwangju_v"     :   "E",
+                "daegu_v"       :   "F",
+                "daejeon_v"     :   "G",
+                "busan_v"       :   "H",
+                "seoul_v"       :   "I",
+                "sejong_v"      :   "J",
+                "ulsan_v"       :   "K",
+                "inceon_v"     :   "L",
+                "jeonnam_v"     :   "M",
+                "jeonbuk_v"     :   "N",
+                "jeju_v"        :   "O",
+                "cungnam_v"    :   "P",
+                "cungbuk_v"    :   "Q"
+            }
+        },
+        
+        "russian":
+        {
+            "detection":
+            {
+                "onnx_path": "AI_engine/detection.onnx",
+                "trt_path": "AI_engine/detection.trt",
+                "num_classes": 2,
+                "img_shape": 640,
+                "classes": {
+                    "car": 0,
+                    "licence_plate": 1
+                }
+            },
+            "rnn":
+            {
+                "onnx_path": "AI_engine/rnn.onnx",
+                "trt_path": "AI_engine/rnn.engine",
+                "img_shape": [512, 912],
+                "batch_size": 1
+            },
+            "recognition":
+            {
+                "model_path": "AI_engine/recognition.tar",
+                "backbone": "Resnet50"
+            },
+            "keys": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-",
+            "aspect_ratio": 2.2
+        },
+
+        "japan":
+        {
+            "detection":
+            {
+                "onnx_path": "AI_engine/detection.onnx",
+                "trt_path": "AI_engine/detection.trt",
+                "num_classes": 2,
+                "img_shape": 640,
+                "classes": {
+                    "car": 1,
+                    "licence_plate": 0
+                }
+            },
+            "rnn":
+            {
+                "onnx_path": "AI_engine/rnn.onnx",
+                "trt_path": "AI_engine/rnn.engine",
+                "img_shape": [512, 912],
+                "batch_size": 1
+            },
+            "recognition":
+            {
+                "model_path": "AI_engine/recognition.tar",
+                "backbone": "Resnet74"
+            },
+            "keys": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZあいうえかきくけこさすせそたちつてとなにぬねのはひふほまみむめもやゆよらりるれろわをぎば外領札幌函館旭川室蘭釧路帯広北米青森八戸岩手盛岡泉宮城仙台秋田山内福島会津郡水土浦宇都那須群馬前橋高崎大口所沢越熊谷春日部千葉成習志野袖ケ柏品世練杉並足立王子多摩横浜湘南相模梨富士新潟長松本諏訪石金井岐阜飛騨静沼伊豆名古屋豊三河尾張小牧一重鈴鹿滋賀京阪和堺奈良歌神姫鳥取根倉敷下関徳香愛媛知九州久留筑佐保分児奄美沖縄平形庄床苫弘白船原江東葛飾板上勢四出雲市外⃝",
+            "aspect_ratio": 1000
+        }
+    }
+}
