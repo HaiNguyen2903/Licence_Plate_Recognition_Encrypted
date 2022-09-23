@@ -1,7 +1,7 @@
 # Setup Tutorial on Jetson Xavier
 ## Requirements
-- Architecture Support: ARM 64
-- Jetpack Version     : 4.4.1
+- Architecture Support: **ARM 64**
+- Jetpack Version     : **4.4.1**
 
 ##  Setup steps:
 **1. Clone code on Xavier device**
